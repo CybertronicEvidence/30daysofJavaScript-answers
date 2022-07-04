@@ -1,0 +1,32 @@
+1. // comments can make code readable
+2. // Welcome to 30DaysOfJavaScript
+3. /* 
+      comments can make code readable,
+      easy to reuse and informative 
+    */
+4. let string = 'Evidence';
+   let boolean = true;
+   let undefined;
+   let null = null;
+5. console.log(typeof string); // string
+   console.log(typeof boolean); // boolean
+   console.log(typeof undefined); // undefined
+   console.log(typeof null); // null
+6. let firstName;
+   let lastName;
+   let age;
+   let school;
+7. let firstName = 'Evidence';
+   let lastName = 'Adejuwon';
+   let age = 19;
+   let school = 'Federal University of Technology, Akure';
+8. let firstName = 'Evidence';
+   let lastName = 'Adejuwon';
+   let status = 'single';
+   let country = 'Nigeria';
+   let age = 19;
+9. let firstName = 'Evidence', lastName = 'Adejuwon', status = 'single', country = 'Nigeria', age = 19;
+10. let myAge = 19;
+    let yourAge = 25;
+    console.log(`I am ${myAge} years old.`); // I am 19 years old.
+    console.log(`You are ${yourAge} years old.`); // You are 25 years old.
