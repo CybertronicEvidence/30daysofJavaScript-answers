@@ -1,0 +1,38 @@
+LEVEL 1
+
+1. let challenge = '30 Days Of JavaScript';
+2. console.log(challenge); // 30 Days Of JavaScript
+3. console.log(challenge.length); // 20
+4. let challengeUp = challenge.toUpperCase(); // 30 DAYS OF JAVASCRIPT
+5. let challengeLow = challenge.toLowerCase(); // 30 days of javascript
+6. let cut = challenge.substr(0, 1); // 3
+7. let slice = challenge.substr(3); // Days Of JavaScript
+8. let include = challenge.includes('Script'); // true
+9. let split = challenge.split(); // [ '30 Days Of JavaScript' ]
+10. let split = challenge.split(' '); // [ '30', 'Days', 'Of', 'JavaScript' ]
+11. let social = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
+    console.log(social.split(','); // [ 'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon' ]
+12. let place = challenge.replace('JavaScript', 'Python'); // 30 Days Of Python
+13. let charAt = challenge.charAt(15); // S
+14. let charCode = challenge.charCodeAt('J'); // 51
+15. let index = challenge.indexOf('a'); // 4
+16. let lastIndex = challenge.lastIndexOf('a'); // 14
+17. let words = 'You cannot end a sentence with because because because is a conjunction';
+    console.log(words.indexOf('because')); // 31
+18. console.log(words.lastIndexOf('because')); // 47
+19. console.log(words.search('because'); //31
+20. let trim = challenge.trim(); //30 Days Of JavaScript
+21. let start = challenge.startsWith('30'); // true
+22. let end = challenge.endsWith('JavaScript'); // true
+23. let path = /a/gi;
+    console.log(challenge.match(path); // [ 'a', 'a', 'a' ]
+24. let me = '30 Days Of ';
+    let you = 'JavaScript';
+    console.log(me.concat(you)); // 30 Days Of JavaScript
+25. let repeat = challenge.repeat(2); // 30 Days Of JavaScript30 Days Of JavaScript
+
+LEVEL 2
+
+1. let string = 'The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.';
+   console.log(string); // The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+2.
