@@ -1,0 +1,12 @@
+LEVEL 1
+
+1. let firstName = 'Evidence';
+   let lastName = 'Adejuwon';
+   let country = 'Nigeria';
+   let city = 'Abuja';
+   let age = 19;
+   let isMarried = false;
+   let year = 2022;
+   console.log(typeof firstName, typeof lastName, typeof country, typeof city, typeof age, typeof isMarried, typeof year);
+   // string, string, string, string, number, boolean, number
+2. 
