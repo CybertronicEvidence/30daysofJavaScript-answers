@@ -51,3 +51,17 @@ LEVEL 2
 10. let random = Math.floor(Math.random() * 10);
     let string = 'JavaScript';
     console.log(string.charAt(random)); // S
+11. 
+12. console.log(words.substr(31, 23); // because because because
+
+LEVEL 3
+
+1. let string = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
+   console.log(string.match(/love/gi)); // [ 'love', 'love', 'love' ]
+2. console.log(words.match(/because/g)); // [ 'because', 'because', 'because' ]
+3. 
+4. let salary = 5000 * 12;
+   let bonus = 10000;
+   let courses = 15000 * 12;
+   let total = salary + bonus + courses;
+   console.log(`His total annual income is ${total} euros.`}; // His total annual income is 250000 euros. 
