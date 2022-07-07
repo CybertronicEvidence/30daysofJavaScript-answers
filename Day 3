@@ -9,4 +9,5 @@ LEVEL 1
    let year = 2022;
    console.log(typeof firstName, typeof lastName, typeof country, typeof city, typeof age, typeof isMarried, typeof year);
    // string, string, string, string, number, boolean, number
-2. 
+2. console.log(typeof '10' == typeof 10); // true
+3. console.log(typeof parseInt('9.8') == typeof 10); // true
