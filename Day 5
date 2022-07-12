@@ -1,3 +1,5 @@
+LEVEL ONE
+
 1. const arr = [];
 2. const subjects = [ 'Maths', 'English', 'Physics', 'Biology', 'Chem', 'SEN', 'CSC']; 
 3. console.log(subjects.length) // 7
@@ -22,3 +24,67 @@
     ? console.log('Pablo')
     : console.log('Not found') // Not found
 14. 
+15. console.log(itCompanies.sort()); // [ 'Amazon', 'Apple', 'Facebook', 'Google', 'IBM', 'Microsoft', 'Oracle' ]
+16. console.log(itCompanies.reverse()); // [ 'Oracle', 'Microsoft', 'IBM', 'Google', 'Facebook', 'Apple', 'Amazon' ]
+17. console.log(itCompanies.slice(0, 3)); // [ 'Oracle', 'Microsoft', 'IBM' ]
+18. console.log(itCompanies.slice(4)); // [ 'Facebook', 'Apple', 'Amazon' ]
+19. console.log(itCompanies.slice(Math.floor(itCompanies.length / 2), 4)) // [ 'Google' ]
+20. console.log(itCompanies.shift()); // Oracle
+21. 
+22. console.log(itCompanies.pop()); // Amazon
+23. 
+
+LEVEL TWO
+
+2. let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+    let textArr = text.split(' ')
+    console.log(textArr) // [ 'I', 'love', 'teaching', 'and', 'empowering', 'people.', 'I', 'teach', 'HTML', 'CSS', 'JS', 'React', 'Python.' ]
+    console.log(textArr.length) // 13
+3. const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+    console.log(shoppingCart.unshift('Meat'))
+    console.log(shoppingCart.push('Sugar'))
+    console.log(shoppingCart) // [ 'Meat', 'Milk', 'Coffee', 'Tea', 'Honey', 'Sugar' ]
+    console.log(shoppingCart.pop())
+    console.log(shoppingCart.pop())
+    console.log(shoppingCart.push('Sugar'))
+    shoppingCart[3] = 'Green Tea'
+    console.log(shoppingCart) // [ 'Meat', 'Milk', 'Coffee', 'Green Tea', 'Honey', 'Sugar' ]
+4. const countries = [ 'Albania', 'Bolivia', 'Canada', 'Denmark', 'Ethiopia', 'Finland', 'Germany', 'Hungary', 'Ireland', 'Japan', 'Kenya' ];
+    if (countries.includes('Ethiopia') === true) {
+        console.log('ETHIOPIA') // ETHIOPIA
+    } else {
+        countries.push('Ethiopia')
+        console.log(countries)
+    }
+5. const webTechs = [ 'HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node', 'MongoDB' ];
+    if (webTechs.includes('Sass') === true) {
+        console.log('Sass is a CSS preprocess')
+    } else {
+        webTechs.push('Sass');
+        console.log(webTechs) // [ 'HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node', 'MongoDB', 'Sass' ]
+    }
+6. const frontEnd = [ 'HTML', 'CSS', 'JS', 'React', 'Redux' ]
+    const backEnd = [ 'Node', 'Express', 'MongoDB' ]
+    const fullstack = frontEnd.concat(backEnd);
+    console.log(fullstack); // [ 'HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'Express', 'MongoDB' ]  
+    
+LEVEL THREE
+
+1. const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+    console.log(ages.sort()); // [19, 19, 20, 22, 24, 24, 24, 25, 25, 26]
+    let median = ages.length / 2;
+    console.log(ages[median]) // 24
+    let average = (ages[0] + ages[1] + ages[2] + ages[3] + ages[4] + ages[5] + ages[6] + ages[7] + ages[8] + ages[9]) / ages.length;
+    console.log(average) // 22.8
+    let max = Math.max(19, 22, 19, 24, 20, 25, 26, 24, 25, 24);
+    let min = Math.min(19, 22, 19, 24, 20, 25, 26, 24, 25, 24);
+    let range = max - min;
+    console.log(range) // 7
+    let compare1 = min - average;
+    console.log(compare1) // -3.8000000000000007
+    let compare2 = max - average;
+    console.log(compare2) // 3.1999999999999993
+    console.log(Math.abs(compare1)) // 3.8000000000000007
+    console.log(Math.abs(compare2)) // 3.1999999999999993
+2.1. console.log(countries.slice(0, 10))  // [ 'Albania', 'Bolivia', 'Canada', 'Denmark', 'Ethiopia', 'Finland', 'Germany', 'Hungary', 'Ireland', 'Japan' ]
+     console.log(countries[Math.floor(countries.length / 2)]); // Finland
