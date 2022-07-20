@@ -1,0 +1,25 @@
+LEVEL 1
+1. function fullName() {
+      return 'Evidence Adejuwon'
+   }
+   console.log(fullName())
+2. function fullName (firstName, lastName) {
+      return `${firstName}  ${lastName}`
+   }
+   console.log(fullName('Evidence', 'Adejuwon'))   
+3. function addNumbers(a, b) {
+      return a + b
+   }
+   console.log(addNumbers(2, 4))
+4. function areaOfRectangle(length, width) {
+      return length * width
+   }
+   console.log(areaOfRectangle(10, 20))
+5. function perimeterOfRectangle(length, width) {
+      return 2 * (length + width)
+   }
+   console.log(perimeterOfRectangle(10, 20))   
+6. function volumeOfRectangle(length, width, height) {
+      return length * width * height
+   }
+   console.log(volumeOfRectangle(10, 20, 30))   
