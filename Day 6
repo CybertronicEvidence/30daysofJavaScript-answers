@@ -84,4 +84,21 @@
     arr.push(even);
     arr.push(odd);
     console.log(arr); // [ 2550, 2500 ]
-13. 
+
+13. let numbers = '0123456789';
+    let random_array = []
+
+    for (let i = 0; i < 5; i++) {
+      random_array.push(numbers.charAt(Math.floor(Math.random() * numbers.length)))
+    }
+    console.log(random_array)
+
+14. 
+
+15. let characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    let random_string = '';
+
+    for (let i = 0; i < 6; i++) {
+      random_string += characters.charAt(Math.floor(Math.random() * characters.length))
+    }
+    console.log(random_string)
