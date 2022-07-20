@@ -1,3 +1,5 @@
+LEVEL 1
+
 1. for (let i = 0; i <= 10; i++) {
      console.log(i) // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
    }
@@ -102,3 +104,165 @@
       random_string += characters.charAt(Math.floor(Math.random() * characters.length))
     }
     console.log(random_string)
+
+LEVEL 2
+
+1. let characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+   let random_string = '';
+
+   for (let i = 0; i < characters.length; i++) {
+     random_string += characters.charAt(Math.floor(Math.random() * characters.length))
+   }
+   console.log(random_string)
+
+2. let characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+   let random_string = '#';
+
+   for (let i = 0; i < 6; i++) {
+     random_string += characters.charAt(Math.floor(Math.random() * characters.length))
+   }
+   console.log(random_string)
+
+3. let numbers = '0123456789'
+   let x = ''
+   let y = ''
+   let z = ''
+
+   for (let i = 0; i < 2; i++) {
+     x += numbers.charAt(Math.floor(Math.random() * numbers.length))
+     y += numbers.charAt(Math.floor(Math.random() * numbers.length))
+     z += numbers.charAt(Math.floor(Math.random() * numbers.length))
+   }
+   console.log(`rgb(${x},${y},${z})`)
+    //OR
+   let x = Math.floor(Math.random() * 256);
+   let y = Math.floor(Math.random() * 256);
+   let z = Math.floor(Math.random() * 256);
+   console.log(`rgb(${x},${y},${z})`)
+
+4. const newArray = []
+   for (const newArr of countries) {
+      newArray.push(newArr.toUpperCase())
+      console.log(newArray)
+   }
+
+5. const newArray = []
+   for (const newArr of countries) {
+     newArray.push(newArr.length)
+   }
+   console.log(newArray)   
+
+6. const newArray = []
+   for (const newArr of countries) {
+     newArray.push([newArr, newArr.slice(0, 3).toUpperCase(), newArr.length])
+   }
+   console.log(newArray)
+
+7. const newArr = []
+
+   for (let i = 0; i < countries.length; i++) {
+      let search = countries[i].includes('land')
+      if (search === true) {
+         newArr.push(countries[i])
+      } else {
+        console.log('None is found')
+      }
+   }
+   console.log(newArr)
+   
+8. const newArr = []
+
+   for (let i = 0; i < countries.length; i++) {
+    let search = countries[i].endsWith('ia')
+    if (search === true) {
+        newArr.push(countries[i])
+    } else {
+
+    }
+   }
+   console.log(newArr)   
+
+9. for (let i = 0; i < countries.length; i++) {
+     let length = countries[i].length;
+     if (length > 7) {
+       console.log(countries[i])
+     }
+   }   
+
+10. const newArr = []
+
+    for (let i = 0; i < countries.length; i++) {
+      let length = countries[i].length;
+      if (length === 5) {
+        newArr.push(countries[i])
+      } else {
+
+      }
+    }
+    console.log(newArr)   
+
+11.
+
+12. const newTech = []
+    for (const newArr of webTechs) {
+      newTech.push([newArr, newArr.length])
+    }
+    console.log(newTech)
+
+13. const abbr = [];
+    for (const newArr of mernStack) {
+      abbr.push(newArr.match(/\b([A-Z])/g).join())
+    }
+    console.log(abbr)
+
+14. for (const newArr of webTechs) {
+      console.log(newArr)
+    }    
+   
+15. const fruits = ['banana', 'orange', 'mango', 'lemon']
+    const rev = []
+    for (const newArr of fruits) {
+      rev.unshift(newArr)
+    }
+    console.log(rev)   
+    
+16. for (const newArr of fullStack) {
+      console.log(newArr.toString())
+    }  
+    
+LEVEL 3
+
+1. const copy = []
+   for (const newArr of countries) {
+     copy.push(newArr)
+   }
+   console.log(copy)
+
+2. const copy = []
+   for (const newArr of countries) {
+     copy.push(newArr)
+   }
+   const sortedCountries = copy.sort()
+   console.log(sortedCountries)   
+
+3. const sort = []
+   for (const newArr of webTechs) {
+     sort.push(newArr)
+   }
+   sort.sort()
+   console.log(sort)
+
+   const sort = []
+   for (const newArr of mernStack) {
+     sort.push(newArr)
+   }
+   sort.sort()
+   console.log(sort)   
+
+ 4 - 8 have been done in LEVEL 2 above
+
+9. const countryReverse = []
+   for (const newArr of countries) {
+     countryReverse.unshift(newArr.toUpperCase())
+   }
+   console.log(countryReverse)   
