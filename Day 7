@@ -22,4 +22,64 @@ LEVEL 1
 6. function volumeOfRectangle(length, width, height) {
       return length * width * height
    }
-   console.log(volumeOfRectangle(10, 20, 30))   
+   console.log(volumeOfRectangle(10, 20, 30))
+7. const areaOfCircle = (r) => Math.round(Math.PI * r ** 2)
+   console.log(areaOfCircle(7))
+
+8. const circumOfCircle = (r) => Math.round(2 * Math.PI * r)
+   console.log(circumOfCircle(7))
+
+9. const density = (mass, volume) => mass / volume;
+   console.log(density(10, 5))
+10. const speed = (distance, time) => distance / time;
+    console.log(speed(20, 2))
+11. const weight = (mass, gravity) => mass * gravity;
+    console.log(weight(10, 10))
+12. const convertCelsiusToFahrenheit = (oC) => {
+      let oF = (oC * 9 / 5) + 32;
+      return oF;
+    }
+    console.log(convertCelsiusToFahrenheit(100))  
+13. const bmi = (weight, height) => {
+
+      let calc = (weight * 1000 / height) / 100
+
+      if (calc < 18.5) {
+         console.log('You are underweight')
+      } else if (calc >= 18.5 && calc <= 24.9) {
+         console.log('You are normal weight')
+      } else if (calc >= 25 && calc <= 29.9) {
+         console.log('You are overweight')
+      } else if (calc >= 30 ) {
+         console.log('You are obese')
+      }
+      return calc;
+    }
+    console.log(bmi(82, 152))
+14. 
+15.
+
+LEVEL 2
+
+1. const solveLinEquation = (a, b, c) => {
+      let x = 3;
+      let y = 2;
+      let lin = (a*x) + (b*y) + c;
+      return lin;
+   }
+   console.log(solveLinEquation(2, 1, 3))
+2. const solveQuadratic = (a, b, c) => {
+      let x1 = (-b + Math.sqrt((b ** 2) - (4 * a * c))) / (2 * a)
+      let x2 = (-b - Math.sqrt((b ** 2) - (4 * a * c))) / (2 * a)
+      return `${x1}, ${x2}`
+   }
+   console.log(solveQuadratic(1, 7, 12))
+3. const printArray = arr => {
+      const newArr = []
+      for (const element of arr) {
+         newArr.push(element)
+      }
+      return newArr;
+   }
+   const numbers = [0, 1, 2, 3, 4, 5]
+   console.log(printArray(numbers))   
