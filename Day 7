@@ -223,3 +223,85 @@ LEVEL 3
       return random;
    }
    console.log(userIdGeneratorByUser(7, 10))
+2. const rgbColorGenerator = () => {
+      let x ='', y = '', z = '', numbers = '0123456789';
+      for (let i = 0; i < 2; i++) {
+         x += numbers.charAt(Math.floor(Math.random() * numbers.length))
+         y += numbers.charAt(Math.floor(Math.random() * numbers.length))
+         z += numbers.charAt(Math.floor(Math.random() * numbers.length))
+      }
+      return `rgb(${x},${y},${z})`
+   }
+   console.log(rgbColorGenerator())
+3. const arrayOfHexaColors = (quantity) => {
+      const randomHexaNumberGenerator = () => {
+         let characters = '0123456789abcdef';
+         let hexaCode = '#'
+         for (let i = 0; i < 6; i++) {
+            hexaCode += characters.charAt(Math.floor(Math.random() * characters.length))
+         }
+         return hexaCode;
+      }
+      const array = []
+      for (let i = 0; i < quantity; i++) {
+         array.push(randomHexaNumberGenerator())
+      }
+      return array;
+   }
+   console.log(arrayOfHexaColors(4))
+4. const arrayOfRgbColors = (quantity) => {
+      const rgbColorGenerator = () => {
+         let x ='', y = '', z = '', numbers = '0123456789';
+         for (let i = 0; i < 2; i++) {
+            x += numbers.charAt(Math.floor(Math.random() * numbers.length))
+            y += numbers.charAt(Math.floor(Math.random() * numbers.length))
+            z += numbers.charAt(Math.floor(Math.random() * numbers.length))
+         }
+         return `rgb(${x},${y},${z})`
+      }
+      let array = [];
+      for (let i = 0; i < quantity; i++) {
+         array.push(rgbColorGenerator())
+      }
+      return array;
+   }
+   console.log(arrayOfRgbColors(3))
+5.
+6.
+7. const generateColors = (type, quantity) => {
+    
+      const randomHexaNumberGenerator = () => {
+         let characters = '0123456789abcdef';
+         let hexaCode = '#'
+         for (let i = 0; i < 6; i++) {
+            hexaCode += characters.charAt(Math.floor(Math.random() * characters.length))
+         }
+         return hexaCode;
+      }
+      const rgbColorGenerator = () => {
+         let x ='', y = '', z = '', numbers = '0123456789';
+         for (let i = 0; i < 2; i++) {
+            x += numbers.charAt(Math.floor(Math.random() * numbers.length))
+            y += numbers.charAt(Math.floor(Math.random() * numbers.length))
+            z += numbers.charAt(Math.floor(Math.random() * numbers.length))
+         }
+         return `rgb(${x},${y},${z})`;
+      }     
+      const arrayOfHex = []
+      if (type === 'hexa') {
+         for (let i = 0; i < quantity; i++) {
+            arrayOfHex.push(randomHexaNumberGenerator())
+         } 
+         return arrayOfHex
+      }
+      const rgbArray = []
+      if (type === 'rgb') {
+         for (let i = 0; i < quantity; i++) {
+            rgbArray.push(rgbColorGenerator())
+         }
+         return rgbArray
+      }
+   }
+
+   console.log(generateColors('hexa', 5))
+8.    
