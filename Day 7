@@ -202,4 +202,24 @@ LEVEL 2
       }
       return randomID;    
     }
-    console.log(userIdGenerator())             
+    console.log(userIdGenerator())        
+    
+LEVEL 3 
+
+1. const userIdGeneratorByUser = (character, iD) => {
+      const userIdGenerator = () => {
+         let characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+         let randomID = '';
+         for (let i = 0; i < character; i++) {
+            randomID += characters.charAt(Math.floor(Math.random() * characters.length))
+         }
+         return randomID;    
+      }
+      let random = ''
+      for (let i = 0; i < iD; i++) {
+         random += userIdGenerator()
+         if (i != 100) random += " ";
+      }
+      return random;
+   }
+   console.log(userIdGeneratorByUser(7, 10))
