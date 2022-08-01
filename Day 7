@@ -82,4 +82,124 @@ LEVEL 2
       return newArr;
    }
    const numbers = [0, 1, 2, 3, 4, 5]
-   console.log(printArray(numbers))   
+   console.log(printArray(numbers))
+4. 
+5. const swapValues = (x, y) => `x = ${y}, y = ${x}`
+   console.log(swapValues(4, 5))
+6. const dogs = ['Pitbull', 'Rottweiller', 'Shepherd']
+   const reverse = []
+   const reverseArray = arr => {
+      for (const newArr of arr) {
+         reverse.unshift(newArr)
+      }
+      return reverse;
+   }
+   console.log(reverseArray(dogs))
+7. const dogs = ['Pitbull', 'Rottweiller', 'Shepherd']
+   const newArr = []
+   const capitalizeArray = array => {
+      for (const element of array) {
+        newArr.push(element.toUpperCase())
+      }
+      return newArr;
+   }
+   console.log(capitalizeArray(dogs))
+8. const shoppingCart = ['']
+   const newProducts = [];
+   function addItem (newArr) {
+      for (const newArray of shoppingCart) {
+         newProducts.push(newArr)
+      }
+      return newProducts
+   }
+   console.log(addItem('Cocaine'))
+9. function removeItem (g) {
+      return shoppingCart.splice(g, 1)
+   }
+   console.log(removeItem(3))
+10. function sumOfNumbers (i, range) {
+      let sum = 0;
+      for (i; i <= range; i++) {
+         sum += i;
+      }
+      return sum;
+    }
+    console.log(sumOfNumbers(1, 100)) 
+11. function sumOfOdds (i, range) {
+      let odd = 0;
+      for (i; i <= range; i++) {
+         if (i % 2 !== 0) {
+           odd += i
+         }
+      }
+      return odd;
+   }
+   console.log(sumOfOdds(1, 100))    
+12. const sumOfEven = (i, range) => {
+      let even = 0;
+      for (i; i <= range; i++) {
+        if (i % 2 === 0) {
+           even += i
+        }
+      }
+      return even;
+   }
+   console.log(sumOfEven(1, 100))
+13. const evensAndOdds = (range) => {
+      let evens = []
+      let odds = []
+      for (let i = 0; i <= range; i++) {
+         if (i % 2 !== 0) {
+           odds.push(i)
+         }
+         if (i % 2 === 0) {
+           evens.push(i)
+         }
+      }
+      let writeUp = `The number of odds are ${odds.length}. The number of evens are ${evens.length}.`
+      return writeUp;
+    }
+    console.log(evensAndOdds(100))
+14. const sumAllNum = (...args) => {
+      let sum = 0;
+      for (const element of args) {
+        sum += element
+      }
+      return sum;
+    }
+    console.log(sumAllNum(1, 2, 3, 4))
+15. const randomUserIp = () => {
+      let Ip = `${(Math.floor(Math.random() * 255) + 1)}.${(Math.floor(Math.random() * 255))}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}`;
+      return Ip;
+    }
+    console.log(randomUserIp())
+16. function randomMacAddress () {
+      let hexDigits = "0123456789ABCDEF";
+      let macAddress = "";
+      for (let i = 0; i < 6; i++) {
+         macAddress+=hexDigits.charAt(Math.round(Math.random() * 15));
+         macAddress+=hexDigits.charAt(Math.round(Math.random() * 15));
+         if (i != 5) macAddress += ":";
+      }
+
+      return macAddress;
+    }
+    console.log(randomMacAddress())
+17. const randomHexaNumberGenerator = () => {
+      let characters = '0123456789abcdef';
+      let hexaCode = '#'
+      for (let i = 0; i < 6; i++) {
+         hexaCode += characters.charAt(Math.floor(Math.random() * characters.length))
+      }
+      return hexaCode;
+    }
+    console.log(randomHexaNumberGenerator())
+18. const userIdGenerator = () => {
+      let characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      let randomID = '';
+      for (let i =0; i < 7; i++) {
+         randomID += characters.charAt(Math.floor(Math.random() * characters.length))
+      }
+      return randomID;    
+    }
+    console.log(userIdGenerator())             
