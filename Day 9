@@ -1,0 +1,104 @@
+LEVEL ONE 
+
+const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const products = [
+  { product: 'banana', price: 3 },
+  { product: 'mango', price: 6 },
+  { product: 'potato', price: ' ' },
+  { product: 'avocado', price: 8 },
+  { product: 'coffee', price: 10 },
+  { product: 'tea', price: '' },
+]
+
+1. 
+
+2.
+
+3. countries.forEach(country => {
+    console.log(country)
+   })
+
+4. names.forEach(name => {
+    console.log(name)
+})   
+
+5. numbers.forEach(number => {
+    console.log(number)
+})
+
+6. const capital = countries.map((item) => item.toUpperCase())
+    console.log(capital)
+
+7. const length = countries.map((item) => item.length)
+    console.log(length)
+    
+8. const makeSquare = number.map((item) => item ** 2)
+    console.log(makeSquare)
+
+9. const nameUp = names.map((item) => item.toUpperCase())
+    console.log(nameUp)
+
+10. const newer = products.map((item) => `${item.product} = ${item.price}`)
+    console.log(newer)
+
+11. const contain = countries.filter((item) => item.includes('land'))
+    console.log(contain)
+
+12. const containY = countries.filter((item) => item.length == 6)
+    console.log(containY)
+
+13. const containX = countries.filter((item) => item.length >= 6)
+    console.log(containX)
+
+14. const start = countries.filter((item) => item.startsWith('E'))
+    console.log(start)
+
+15. const filter = products.filter((item) => item.price > 1)
+    console.log(filter)
+
+16. const getStringLists = (arr) => {
+    const result = arr.map((item) => `${item}`)
+    return result
+  }
+  console.log(getStringLists(countries))
+
+17. const sumOf = number.reduce((acc, curr) => acc + curr)
+    console.log(sumOf)
+
+18. const concat = countries.reduce((acc, curr) => `${acc}, ${curr}`)
+    console.log(concat)
+
+19. 
+
+20. const compare = names.some((item) => item.length > 7)
+    console.log(compare)
+
+21. const compareQ = countries.every((item) => item.includes('land'))
+    console.log(compareQ)
+
+22. 
+
+23. const finding = countries.find((item) => item.length == 6)
+    console.log(finding)
+
+24. const foundAt = countries.findIndex((item) => item.length == 6)
+    console.log(foundAt)
+
+25. const position = countries.findIndex((item) => item.includes('Norway'))
+    console.log(position)
+
+26. const positionX = countries.findIndex((item) => item.includes('Rusia'))
+    console.log(positionX)
+
+LEVEL TWO
+
+1. const aLongOne = products.map((item) => item.price).filter((item) => item > 1).reduce((acc, curr) => acc + curr)
+    console.log(aLongOne)
+
+2. const add = products.map((item) => item.price)
+    const sum = add.reduce((acc, curr) => acc + curr)
+    console.log(sum)
+
+3.   
