@@ -1,0 +1,173 @@
+LEVEL ONE
+
+1. const dog = {}
+
+2. console.log(dog)
+
+3. const dog = {
+    name: 'Bruno',
+    legs: 'white',
+    color: 'Gold brown',
+    bark: 'woof woof'
+   }
+
+4. console.log(dog)
+
+5. dog.breed = 'Pitbull'
+   dog.getDogInfo = function(){
+
+   }
+
+LEVEL TWO 
+
+1. const personWithTheHighestSkills = () => {
+    const getHighestNumber = () => {
+        const array = []
+        array.push(Object.values(users.Alex.skills).length)
+        array.push(Object.values(users.Asab.skills).length)
+        array.push(Object.values(users.Brook.skills).length)
+        array.push(Object.values(users.Daniel.skills).length)
+        array.push(Object.values(users.John.skills).length)
+        array.push(Object.values(users.Thomas.skills).length)
+        array.push(Object.values(users.Paul.skills).length)
+    
+        const max = Math.max(...array);
+        const index = array.indexOf(max);
+    
+        return index;
+    }
+    console.log(getHighestNumber())
+    const mainKey = Object.keys(users)[getHighestNumber()]
+
+    return mainKey
+    }
+    console.log(personWithTheHighestSkills())
+
+2. const countUsersPoints = () => {
+    const arr = []
+    if (users.Alex.points >= 50 ) {
+        arr.push(users.Alex.points)
+    }
+    if (users.Asab.points >= 50 ) {
+        arr.push(users.Asab.points)
+    }
+    if (users.Brook.points >= 50 ) {
+        arr.push(users.Brook.points)
+    }
+    if (users.Daniel.points >= 50 ) {
+        arr.push(users.Daniel.points)
+    }
+    if (users.John.points >= 50 ) {
+        arr.push(users.John.points)
+    }
+    if (users.Thomas.points >= 50 ) {
+        arr.push(users.Thomas.points)
+    }
+    if (users.Paul.points >= 50 ) {
+        arr.push(users.Paul.points)
+    }
+
+    const count = arr.length;
+
+    return count;
+    }
+    console.log(countUsersPoints())
+
+    OR
+
+   const countPoints = () => {
+    let count = 0;
+    for (const key in users){
+        let point = users[key].points
+        console.log(point)
+        if (point >= 50) {
+            count++
+        }
+    }
+    return count;
+    }
+    console.log(countPoints())
+
+3. const tech = []
+    if (
+        users.Alex.skills.includes('MongoDB') && users.Alex.skills.includes('Express')
+        && users.Alex.skills.includes('React') && users.Alex.skills.includes('Node')
+    ) {
+        tech.push(users.Alex.skills)
+    }
+    if (
+        users.Asab.skills.includes('MongoDB') && users.Asab.skills.includes('Express')
+        && users.Asab.skills.includes('React') && users.Asab.skills.includes('Node')
+    ) {
+        tech.push(users.Asab.skills)
+    }
+    if (
+        users.Brook.skills.includes('MongoDB') && users.Brook.skills.includes('Express')
+        && users.Brook.skills.includes('React') && users.Brook.skills.includes('Node')
+    ) {
+        tech.push(users.Brook.skills)
+    }
+    if (
+        users.Daniel.skills.includes('MongoDB') && users.Daniel.skills.includes('Express')
+        && users.Daniel.skills.includes('React') && users.Daniel.skills.includes('Node')
+    ) {
+        tech.push(users.Daniel.skills)
+    }
+    if (
+        users.John.skills.includes('MongoDB') && users.John.skills.includes('Express')
+        && users.John.skills.includes('React') && users.John.skills.includes('Node')
+    ) {
+        tech.push(users.John.skills)
+    }
+    if (
+        users.Thomas.skills.includes('MongoDB') && users.Thomas.skills.includes('Express')
+        && users.Thomas.skills.includes('React') && users.Thomas.skills.includes('Node')
+    ) {
+        tech.push(users.Thomas.skills)
+    }
+    if (
+        users.Paul.skills.includes('MongoDB') && users.Paul.skills.includes('Express')
+        && users.Paul.skills.includes('React') && users.Paul.skills.includes('Node')
+    ) {
+        tech.push(users.Paul.skills)
+    }
+    const count = tech.length
+    console.log(count)
+
+4. const newUsers = Object.assign({}, users)
+    newUsers.Evidence = {}
+    console.log(newUsers) 
+
+5. const userKeys = Object.keys(users);
+    console.log(userKeys)
+
+6. const userValues = Object.values(users);
+    console.log(userValues)
+
+7.
+
+LEVEL THREE
+
+1. const personAccount = {
+    firstName: 'Evidence',
+    lastName: 'Adejuwon',
+    incomes: [
+        {desc: 'amount'},
+        {NFT: '$100'},
+        {Project: '$1500'}
+    ],
+    expenses: [
+        {desc: 'amount'},
+        {glasses: '$5'},
+        {internet: '$100'},
+        {giveaway: '$200'}
+    ],
+    totalIncome: '$1600',
+    totalExpenses: '$305',
+    accountInfo: 'Savings',
+    addIncome: ' ',
+    addExpense: ' ',
+    accountBalance: '$1295'
+ }
+
+2. 
