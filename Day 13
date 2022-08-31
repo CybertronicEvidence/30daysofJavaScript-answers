@@ -1,0 +1,44 @@
+LEVEL 1
+
+1. const countries = [
+    ['Finland', 'Helsinki'],
+    ['Sweden', 'Stockholm'],
+    ['Norway', 'Oslo']
+  ]
+  console.table(countries)
+
+2. I did not see the countries object and the logs to group  
+
+LEVEL 2
+
+1. console.assert(10 > 2 * 10, '10 is not greater than 20')
+
+2. console.warn('This is a warning')
+
+3. console.error('This is an error message')
+
+LEVEL 3
+
+1. const users = [
+    ['Person1', 'Evidence'],
+    ['Person2', 'Joshua'],
+    ['Person3', 'David']
+  ]
+  
+  console.time('for loop')
+  for (let i = 0; i < users.length; i++) {
+    console.log(users[i][0], users[i][1])
+  }
+  console.timeEnd('for loop')
+  
+  console.time('for of loop')
+  for (const [person, name] of users) {
+    console.log(person, name)
+  }
+  console.timeEnd('for of loop')
+  
+  console.time('forEach loop')
+  users.forEach(([person, name]) => {
+    console.log(person, name)
+  })
+  console.timeEnd('forEach loop')
