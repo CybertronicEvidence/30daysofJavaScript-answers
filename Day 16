@@ -1,0 +1,38 @@
+LEVEL ONE
+
+1. const text = JSON.stringify({skills}, undefined, 4)
+    console.log(text);
+
+2. const ageObj = JSON.stringify({age}, undefined, 4)
+    console.log(ageObj)
+    
+3. const is = JSON.stringify({isMarried}, undefined, 4)
+    console.log(is);
+
+4. const studentS = JSON.stringify(student, undefined, 4)
+    console.log(studentS)
+
+LEVEL TWO 
+
+1. const studentY = JSON.stringify(student, [ 'firstName', 'lastName', 'skills'], 4)
+    console.log(studentY)
+
+LEVEL THREE 
+
+1. const txte = JSON.parse(txt, undefined, 4)
+    console.log(txte)
+
+2. const array = []
+    array.push(Object.values(txte.Alex.skills).length)
+    array.push(Object.values(txte.Asab.skills).length)
+    array.push(Object.values(txte.Brook.skills).length)
+    array.push(Object.values(txte.Daniel.skills).length)
+    array.push(Object.values(txte.John.skills).length)
+    array.push(Object.values(txte.Thomas.skills).length)
+    array.push(Object.values(txte.Paul.skills).length)
+
+    const max = Math.max(...array);
+    const index = array.indexOf(max);
+
+    const mainKey = Object.keys(txte)[index]
+    console.log(mainKey)    
