@@ -1,0 +1,52 @@
+LEVEL ONE
+
+1. const mySelf = {
+    firstName: 'Evidence',
+    lastName: 'Adejuwon',
+    age: 30,
+    country: 'Nigeria',
+    city: 'Abuja'
+    }
+
+    const mySelfJS = JSON.stringify(mySelf, undefined, 4)
+    localStorage.setItem('mySelf', mySelfJS)
+    console.log(localStorage)
+
+LEVEL TWO
+
+1. const student = {
+    firstName: 'Evidence',
+    lastName: 'Adejuwon',
+    age: 30,
+    skills: [ 'HTML', 'CSS', 'JS', 'MongoDB', 'Express', 'Node'],
+    country: 'Nigeria'
+    }
+
+    const studentJS = JSON.stringify(student, undefined, 4)
+    localStorage.setItem('student', studentJS)
+    console.log(localStorage)
+
+
+LEVEL THREE
+
+1. const personAccount = {
+    firstName: 'Evidence',
+    lastName: 'Adejuwon',
+    incomes: [
+        {desc: 'amount'},
+        {NFT: '$100'},
+        {Project: '$1500'}
+    ],
+    expenses: [
+        {desc: 'amount'},
+        {glasses: '$5'},
+        {internet: '$100'},
+        {giveaway: '$200'}
+    ],
+    totalIncome: '$1600',
+    totalExpenses: '$305',
+    accountInfo: 'Savings',
+    addIncome: ' ',
+    addExpense: ' ',
+    accountBalance: '$1295'
+}
